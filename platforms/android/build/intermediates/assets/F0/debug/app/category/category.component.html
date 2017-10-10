@@ -1,0 +1,16 @@
+<StackLayout>
+
+
+    <ActivityIndicator *ngIf="categoryLoading">
+    </ActivityIndicator>
+
+    <Button
+        *ngFor="let category of categories"
+        text="{{category}}"
+        [nsRouterLink]="['/home', { outlets: { categoryoutlet: ['categories', category] } } ]"
+    >
+    </Button> 
+
+    
+
+</StackLayout>

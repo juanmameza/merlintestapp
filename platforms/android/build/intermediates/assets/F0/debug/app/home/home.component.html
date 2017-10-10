@@ -1,0 +1,9 @@
+<ActionBar title="Nested Navigation" class="action-bar"></ActionBar>
+<TabView class="tab-view">
+  <StackLayout *tabItem="{title: 'All Apps'}">
+    <router-outlet name="listoutlet"></router-outlet>
+  </StackLayout>
+  <StackLayout *tabItem="{title: 'Categories'}">
+    <router-outlet name="categoryoutlet"></router-outlet>
+  </StackLayout>
+</TabView>

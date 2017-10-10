@@ -1,0 +1,14 @@
+<ScrollView>
+    <StackLayout>
+        <ActivityIndicator *ngIf="isLoading">
+        </ActivityIndicator>
+    </StackLayout>
+    <StackLayout>
+        <StackLayout *ngFor="let result of results">
+
+            <Image src="{{result.data.icon_img}}"></Image>
+            <Label text={{result.data.display_name}}></Label>
+
+        </StackLayout>
+    </StackLayout>
+</ScrollView>

@@ -1,0 +1,10 @@
+<ScrollView>
+        <StackLayout>
+                <StackLayout *ngFor="let app of appsFromCategory">
+
+                        <Image src="{{app.data.icon_img}}"></Image>
+                        <Label text={{app.data.display_name}}></Label>
+
+                </StackLayout>
+        </StackLayout>
+</ScrollView>
